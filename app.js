@@ -11,7 +11,7 @@ app.get('/health', (req, res) => {
 })
 
 app.get('/version', (req, res) => {
-  res.send(process.env.HEROKU_RELEASE_VERSION) // change this string to ensure a new version deployed
+  res.send(process.env.HEROKU_RELEASE_VERSION) // https://devcenter.heroku.com/articles/dyno-metadata
 })
 
 app.listen(PORT, () => {
