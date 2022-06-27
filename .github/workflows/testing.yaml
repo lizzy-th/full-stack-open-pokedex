@@ -24,5 +24,5 @@ jobs:
         run: echo "$COMMIT_MESSAGES"
       - name: bool skip
         env:
-          COMMIT_MESSAGES: ${{ toJson(github.event.commits.*.message) }}
-        run: echo "!contains(github.event.head_commit.message, '#skip')"
+          BOOL_SKIP: ${{ !contains(github.event.head_commit.message, '#skip') }}
+        run: echo "$BOOL_SKIP" 
