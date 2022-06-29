@@ -2,7 +2,7 @@ name: Schedule ping
 
 on:
   schedule:
-    - cron: '15 * * * *'
+    - cron: '15 0 * * *'
 
 jobs:
   test_schedule:
@@ -14,4 +14,3 @@ jobs:
           url: https://intense-brushlands-70625.herokuapp.com/health
           max-attempts: 3 
           retry-delay: 5s
-
