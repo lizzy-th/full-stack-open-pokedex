@@ -2,7 +2,7 @@
 
 This repository is used for the CI/CD module of the Full stack open course
 
-Fork the repository to complete course exercises
+This is the repository of exercises 11.20 and 11.21: https://github.com/lizzy-th/full-stack-open-ci-cd-phonebook
 
 ## Commands
 
